@@ -18,7 +18,7 @@ class User extends Authenticatable implements JWTSubject
 
     public function getRouteKeyName(): string
     {
-        return 'usernames';
+        return 'username';
     }
 
     public function articles(): HasMany

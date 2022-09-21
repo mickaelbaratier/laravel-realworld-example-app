@@ -1,0 +1,16 @@
+hy Dev,
+They have juste one test have pass(showArticle).
+
+For test get route key name :
+The methode getRouteKeyName don't return 'username' but 'usernames'
+
+For test article :
+You need to implement the methode article in Models User.php.
+This function is not implemented
+
+For test Favorite articles :
+Same probleme of the last test.
+
+For test does user follow another user :
+You need to implement the methode doesUserFollowAnotherUser in Models User.php.
+This function is not implemented
