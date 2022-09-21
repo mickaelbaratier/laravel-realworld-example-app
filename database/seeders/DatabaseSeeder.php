@@ -109,5 +109,17 @@ class DatabaseSeeder extends Seeder
                 'updated_at' => Carbon::now()
             ]
         );
+        DB::table('followers')->insert(
+            [
+                [
+                    'follower_id' => $id_Musonda,
+                    'following_id' => $id_Rose
+                ],
+                [
+                    'follower_id' => $id_Rose,
+                    'following_id' => $id_Musonda
+                ]
+            ]
+        );
     }
 }
