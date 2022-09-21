@@ -43,7 +43,7 @@ class User extends Authenticatable implements JWTSubject
 
     public function doesUserFollowAnotherUser(int $followerId, int $followingId): bool
     {
-        //To implement
+        return $this->where('id', $followerId)->whereRelation('followers', 'id', $followingId)->exists();
     }
 
     public function doesUserFollowArticle(int $userId, int $articleId): bool
